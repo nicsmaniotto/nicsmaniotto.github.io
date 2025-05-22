@@ -113,14 +113,60 @@ body{
     font-style: italic;
 }
 
+.container
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skills-text{
+    width: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.skills{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reduced{
+    gap: 10px !important;
+    height: 12px !important;
+    width: 70px !important;
+    padding: 16px !important;
+    font-size: 20px !important;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.skill{
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    border: solid 3px white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .timeline-container{
     display: flex;
     flex-direction: column;
-    width: 74%;
+    align-items: center;
+    padding: 20px;
 }
 
 .divider{
-    width: 100%;
+    width: 80%;
     height: 70px;
     border-left: 5px #e0e1dd dashed;
 }
@@ -129,7 +175,7 @@ body{
     display: flex;
     flex-direction: column;
     row-gap: 40px;
-    width: 100%;
+    width: 80%;
     border-left: solid 5px #e0e1dd;
 }
 
@@ -141,13 +187,14 @@ body{
     padding: 40px 0px;
     text-decoration: inherit;
     color: inherit;
+    gap: 30px;
 }
 
 .explanation{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 70%;
+    max-width: 70%;
     text-align: center;
 }
 
@@ -157,6 +204,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100px;
+    min-width: 100px;
     height: 100px;
     left: -70px;
     border-radius: 50%;
@@ -170,7 +218,8 @@ body{
     
     .dot-container{
         border: 5px solid #ffa200;
-        width: 120px;
+        width: 120px !important;
+        min-width: 120px;
         height: 120px;
         left: -78px;
     }
@@ -204,4 +253,17 @@ body{
 
 .description{
     font-size: 20px;
+}
+
+.link{
+    text-decoration:none;
+    font-size: 20px;
+    font-style: italic;
+    color: white;
+    margin-top: 7px;
+    display: block;
+    padding-bottom: 3px;
+    border-bottom: 1px solid;
+    width: fit-content;
+    justify-self: center;
 }
