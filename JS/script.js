@@ -66,35 +66,13 @@ const timelineSteps = [
         long: "",
         did: "",
         screens: [""]
-    },
-    {
-        img: "./IMGS/eh.png",
-        link: "https://www.eventhorizonschool.com/",
-        skills: [],
-        title: "Event Horizon School",
-        date: "oct 2021 - present",
-        txt: "Years of education of Game Programming at Event Horizon School in Padua.",
-        long: "",
-        did: "",
-        screens: [""]
-    },
-    {
-        img: "./IMGS/cfoscari.png",
-        link: "https://www.unive.it/",
-        skills: [],
-        title: "Ca' Foscari University",
-        date: "2014 - 2021",
-        txt: "Years of education at Ca' Foscari University: started with the highly beloved japanese culture focused bachelor degree ended with graduation. Moved on with a data-science bachelor degree.<br> <a class='link' href='./IMGS/eh.png' target='_blank' download>IT Thesis</>",
-        long: "",
-        did: "",
-        screens: [""]
-    },
+    }
 ]
 let isOpening = false;
 let bodyContainer = document.getElementById("body-container");
 let bg = document.getElementById("bg");
 
-let container = document.getElementById("timeline");
+let container = document.getElementById("timeline-PROJECTS");
 let focusContainer = document.getElementById("focusContainer");
 
 for(let i = 0; i < timelineSteps.length; i++){
@@ -311,4 +289,74 @@ function changeSlide(dir){
     }, 390);
 
 
+}
+
+let educationSteps = [{
+        img: "./IMGS/eh.png",
+        link: "https://www.eventhorizonschool.com/",
+        skills: [],
+        title: "Event Horizon School",
+        date: "oct 2021 - present",
+        txt: "Years of education of Game Programming at Event Horizon School in Padua.",
+        long: "",
+        did: "",
+        screens: [""]
+    },
+    {
+        img: "./IMGS/cfoscari.png",
+        link: "https://www.unive.it/",
+        skills: [],
+        title: "Ca' Foscari University",
+        date: "2014 - 2021",
+        txt: "Years of education at Ca' Foscari University: started with the highly beloved japanese culture focused bachelor degree ended with graduation. Moved on with a data-science bachelor degree.<br> <a class='link' href='./IMGS/eh.png' target='_blank' download>IT Thesis</>",
+        long: "",
+        did: "",
+        screens: [""]
+    },
+]
+
+let educationContainer = document.getElementById("timeline-EDUCATION");
+
+for(let i = 0; i < educationSteps.length; i++){
+
+    let elem = document.createElement("a");
+
+    elem.className = "explanation-container";
+    elem.innerHTML = explanationTemplate;
+
+    elem.href = educationSteps[i].link;
+    elem.target = "#blank";
+
+    let dotContainers = elem.getElementsByClassName("dot-container");
+
+    if(dotContainers.length > 0){
+        dotContainers[0].href = educationSteps[i].link;
+        dotContainers[0].target = "#blank";
+    }
+
+    let dots = elem.getElementsByClassName("dot");
+
+    if(dots.length > 0){
+        dots[0].src = educationSteps[i].img;
+    }
+
+    let titles = elem.getElementsByClassName("title");
+
+    if(titles.length > 0){
+        titles[0].innerText = educationSteps[i].title;
+    }
+
+    let subtitles = elem.getElementsByClassName("subtitle");
+
+    if(subtitles.length > 0){
+        subtitles[0].innerText = educationSteps[i].date;
+    }
+
+    let descriptions = elem.getElementsByClassName("description");
+
+    if(descriptions.length > 0){
+        descriptions[0].innerHTML = educationSteps[i].txt;
+    }
+
+    educationContainer.appendChild(elem);
 }
