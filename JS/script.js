@@ -7,15 +7,10 @@ const timelineSteps = [
         skills: ["UE5", "Blueprints"],
         title: "Demon in me",
         date: "jul 2024",
-        txt: "Play as Vudu, a medium possessed by the demon Ad'yes, and switch forms at will! Explore an open world, collect tarot cards for powerful attacks and defenses, and battle deadly monsters. Will you master the balance between spirit and darkness?",
-    },
-    {
-        img: "./IMGS/domandino.PNG",
-        link: "https://smanio.itch.io/domandinos-adventure",
-        skills: ["Unity", "C#"],
-        title: "Domandino's Adventure",
-        date: "dec 2023",
-        txt: "Join Domandino, the curious dino, in a fun quiz adventure! Test your knowledge of nature and animals across different levels, with Domandino offering hints and fun facts along the way. Can you become a true nature expert?",
+        txt: "UE5 school open-map project: the goal of the game is to defeat demons you encounter along the path while collecting different cards that acts as weapons.",
+        long: "Demon in me is a school project made in Unreal Engine 5 through the use of blueprints. <br> In this project we approached the potentiality of the engine and created an open-map with the loading/unloading of the levels with the level streaming system. The protagonist can make use of different weapons which interacts with the enemies in several ways (i.e. wind knockback, fire burn, enemies becoming friends). ",
+        did: "<li>Level loading/unloading system</li><li>Enemies AI</li><li>Inventory system</li><li>Save system</li><li>UI</li><li>Consumables</li>",
+        screens: ["./IMGS/tarocchi.jpg", "./IMGS/pushy.png", "./IMGS/deadc.png", "./IMGS/kidds.png"]
     },
     {
         img: "./IMGS/pushy.png",
@@ -23,7 +18,10 @@ const timelineSteps = [
         skills: ["Unity", "C#"],
         title: "Pushy Cat",
         date: "nov 2023",
-        txt: "Guide a hungry cat through a cozy room, moving furniture to clear its path to lunch! Slide obstacles, plan your moves, and enjoy a relaxing, purr-filled puzzle adventure. Can you help the kitty reach its meal?"
+        txt: "Mobile school project where I implemented the main core of the game mechanics.<br>(Also made the soundtrack :-P)",
+        long: "",
+        did: "",
+        screens: [""]
     },
     {
         img: "./IMGS/deadc.png",
@@ -31,7 +29,10 @@ const timelineSteps = [
         skills: ["Unity", "C#"],
         title: "Dead Cat Bounce",
         date: "jun 2023",
-        txt: "Abandoned in the end again for the last time, an old cat wanders the dark and narrow hallways of his mind fighting against his inner fears. Face different challenges to help him overcome his trauma: will he be able to overcome this battle against himsel or is his fate written for good?"
+        txt: "Implemented several rooms and power-ups of this soft rogue-like project.",
+        long: "",
+        did: "",
+        screens: [""]
     },
     {
         img: "./IMGS/kidds.png",
@@ -39,7 +40,10 @@ const timelineSteps = [
         skills: ["Unity", "C#"],
         title: "Kidd's Treasure",
         date: "may 2023",
-        txt: "Set sail as a helpful pirate, ferrying islanders between lands to complete their tasks! Along the way, solve simple puzzles and engage in quirky, fun dialogues with the people you assist. Each successful journey earns you a key—collect enough to unlock the legendary final treasure. Can you navigate the seas, help those in need, and claim the ultimate reward?"
+        txt: "Worked to create the core mechanics of this delivery narrative game.",
+        long: "",
+        did: "",
+        screens: [""]
     },
     {
         img: "./IMGS/dontclick.png",
@@ -47,7 +51,10 @@ const timelineSteps = [
         skills: ["Unity", "C#"],
         title: "Don't Click Me Or Else...",
         date: "apr 2023",
-        txt: "Survive the chaos of a toxic workplace in DON'T CLICK ME OR ELSE! As a stressed office employee, you must complete tasks sent via email—but beware! Spam emails with misleading instructions lurk in your inbox, waiting to trip you up. Follow the right orders, avoid mistakes, and keep your job as long as possible. But if you mess up too often, your furious boss will fire you! How long can you withstand the pressure and rack up the highest score?"
+        txt: "One week jam-like project. Solo-programmer experience.",
+        long: "",
+        did: "",
+        screens: [""]
     },
     {
         img: "./IMGS/tcrossing.png",
@@ -55,34 +62,68 @@ const timelineSteps = [
         skills: ["Unity", "C#"],
         title: "Tomato Crossing",
         date: "feb 2023",
-        txt: "In this fast-paced game, you control a tomato on a mission to collect points by dodging naturalistic obstacles. The further you go, the higher your score climbs! Use quick reflexes to navigate through challenging environments, and see how long you can keep your tomato running!"
+        txt: "Worked to create the procedural experience and gameplay of a crossy road-like game.",
+        long: "",
+        did: "",
+        screens: [""]
     },
     {
         img: "./IMGS/eh.png",
         link: "https://www.eventhorizonschool.com/",
-        skills: ["Unity", "C#"],
+        skills: [],
         title: "Event Horizon School",
         date: "oct 2021 - present",
-        txt: "Years of education of Game Programming at Event Horizon School in Padua."
+        txt: "Years of education of Game Programming at Event Horizon School in Padua.",
+        long: "",
+        did: "",
+        screens: [""]
     },
     {
         img: "./IMGS/cfoscari.png",
         link: "https://www.unive.it/",
-        skills: ["Unity", "C#"],
+        skills: [],
         title: "Ca' Foscari University",
         date: "2014 - 2021",
-        txt: "Years of education at Ca' Foscari University: started with the highly beloved japanese culture focused bachelor degree ended with graduation. Moved on with a data-science bachelor degree. Graduated with a thesis about learning rates of various machine-learning algorithms.<br> <a class='link' href='./IMGS/eh.png' target='_blank' download>IT Thesis</>"
+        txt: "Years of education at Ca' Foscari University: started with the highly beloved japanese culture focused bachelor degree ended with graduation. Moved on with a data-science bachelor degree.<br> <a class='link' href='./IMGS/eh.png' target='_blank' download>IT Thesis</>",
+        long: "",
+        did: "",
+        screens: [""]
     },
 ]
+let isOpening = false;
+let bodyContainer = document.getElementById("body-container");
+let bg = document.getElementById("bg");
 
 let container = document.getElementById("timeline");
+let focusContainer = document.getElementById("focusContainer");
 
 for(let i = 0; i < timelineSteps.length; i++){
 
     let elem = document.createElement("a");
 
-    elem.href = timelineSteps[i].link;
-    elem.target = "_blank";
+    elem.onclick = function(){
+        focusContainer.classList.replace("hidden", "shown");
+
+        focusContainer.focus();
+
+        isOpening = true;
+
+        fillFocus(i);
+
+        setTimeout(function(){
+            isOpening = false;
+
+            focusContainer.style.opacity = 1;
+
+            document.body.style.overflow = "clip";
+
+            bg.style.zIndex = 1;
+            bg.style.background = "#00000045";
+
+            bodyContainer.style.filter = "blur(3px)"
+
+        }, 100);
+    }
 
     elem.className = "explanation-container";
     elem.innerHTML = explanationTemplate;
@@ -90,8 +131,7 @@ for(let i = 0; i < timelineSteps.length; i++){
     let dotContainers = elem.getElementsByClassName("dot-container");
 
     if(dotContainers.length > 0){
-        dotContainers[0].href = timelineSteps[i].link;
-        dotContainers[0].target = "_blank";
+        dotContainers[0].onclick = elem.onclick;
     }
 
     let dots = elem.getElementsByClassName("dot");
@@ -136,3 +176,139 @@ for(let i = 0; i < timelineSteps.length; i++){
 }
 
 let expContainers = container.getElementsByClassName("explanation-container");
+
+function closeFocus(){
+    document.body.style.overflow = "visible";
+    bodyContainer.style.filter = "blur(0px)"
+    bg.style.zIndex = -1;
+    bg.style.background = "#00000000";
+
+    focusContainer.style.opacity = 0;
+    
+    setTimeout(function(){
+            focusContainer.classList.replace("shown", "hidden");
+
+        }, 300);
+}
+
+let currentIndex = 0;
+let slides;
+
+function fillFocus(i){
+    let obj = timelineSteps[i];
+
+    let title = document.getElementById("focusTitle");
+    title.innerText = obj.title.toUpperCase();
+
+    let list = focusContainer.getElementsByTagName("div");
+
+    for(let i = 0; i < list.length; i++)
+    {
+        let elem = list[i];
+        switch(elem.id)
+        {
+            case "about":
+                elem.innerHTML = obj.long;
+                break;
+            case "did":
+                elem.innerHTML = obj.did;
+                break;
+            case "did":
+                elem.innerHTML = obj.did;
+                break;
+            case "date":
+                elem.innerHTML = obj.date;
+                break;
+            case "skills":
+                Array.from(elem.children).forEach((e) => e.remove());
+                obj.skills.forEach((e) => {
+                    let skill = document.createElement("div");
+                    skill.innerText = e;
+                    skill.className = "skill";
+                    elem.appendChild(skill);
+                })
+                break;
+            case "imgs":
+                Array.from(elem.children).forEach((e) => e.remove());
+
+                obj.screens.forEach((e) => {
+                    
+                    let img = document.createElement("img");
+                    img.src = e;
+                    img.style.width = "100%";
+                    img.style.aspectRatio = "inherit";
+                    // img.style.scale = "1.2";
+                    elem.appendChild(img);
+                })
+
+                currentIndex = 0;
+                slides = Array.from(elem.children);
+                break;
+            case "link":
+                elem.onclick = function()
+                {
+                    window.open(obj.link);
+                }
+                break;
+        }
+    }
+    
+}
+
+document.onclick = function(e) {
+
+    if(isOpening)
+    {
+        isOpening = false;
+        return;
+    }
+
+    if(focusContainer.style.opacity <= 0) return;
+
+    if(e.target != focusContainer && !focusContainer.contains(e.target)) {
+        closeFocus();
+    }
+}
+
+let isSliding;
+
+function changeSlide(dir){
+
+    if(isSliding) return;
+
+    isSliding = true;
+
+    let i = currentIndex;
+    currentIndex = currentIndex + dir;
+
+    if(currentIndex >= slides.length)
+    {
+        currentIndex = 0;
+    }
+    else if(currentIndex < 0)
+    {
+        currentIndex = slides.length - 1;
+    }
+
+    slides[currentIndex].style.translate = ((currentIndex * -100) + (dir * 100)).toString() + "%";
+
+    
+    setTimeout(function()
+    {
+        slides[i].style.transition = "0.4s";
+        slides[currentIndex].style.transition = "0.4s";
+
+        slides[i].style.translate = (i * -100 + -dir * 100).toString() + "%";
+        slides[currentIndex].style.translate = (currentIndex * -100).toString() + "%";
+    }, 100);
+
+    setTimeout(function()
+    {
+        slides[i].style.transition = "0s";
+        slides[currentIndex].style.transition = "0s";
+
+        isSliding = false;
+    }, 390);
+
+
+}
