@@ -2,71 +2,78 @@ const explanationTemplate = '<a class="dot-container"><img class="dot"/></a><div
 
 const timelineSteps = [
     {
-        img: "./IMGS/tarocchi.jpg",
+        img: "ET2.png",
+        link: "https://smanio.itch.io/end-times",
+        git: "https://github.com/nicsmaniotto/SpecializationP",
+        doc: "./Doc/SP_TechnicalOverview.pdf",
+        skills: ["UE5", "C++", "Blueprints"],
+        title: "End Times",
+        date: "jul 2025",
+        txt: "Specialization work for my final year at Event Horizon School.<br>An Outer Wilds Tribute.",
+        long: "This project represents the specialization work for my final year at Event Horizon School. Developed over the course of approximately two months, it is focused on the domain of gameplay programming. The goal was to replicate within Unreal Engine 5 the core movement mechanics of the well-known game Outer Wilds, by implementing components that leverage the engine’s built-in physics system to apply forces and impulses to objects.Furthermore, the project integrates additional components for environmental interaction and for representing specific gameplay behaviors through simple and intuitive UI interfaces.",
+        did: "<li>Physics based land/air movement</li><li>Custom gravity system</li><li>Possession logic</li><li>Interactables</li><li>Planet rotation/revolution movement</li><li>UI</li>",
+        screens: ["ET1.png", "ET2.png", "ET3.png", "ET4.png", "ET5.png", "ET6.png"],
+        video: "okrj4g1hwqY"
+    },
+    {
+        img: "tarocchi.jpg",
         link: "https://smanio.itch.io/demon-in-me",
         skills: ["UE5", "Blueprints"],
         title: "Demon in me",
         date: "jul 2024",
         txt: "UE5 school open-map project: the goal of the game is to defeat demons you encounter along the path while collecting different cards that acts as weapons.",
-        long: "Demon in me is a school project made in Unreal Engine 5 through the use of blueprints. <br> In this project we approached the potentiality of the engine and created an open-map with the loading/unloading of the levels with the level streaming system. The protagonist can make use of different weapons which interacts with the enemies in several ways (i.e. wind knockback, fire burn, enemies becoming friends). ",
-        did: "<li>Level loading/unloading system</li><li>Enemies AI</li><li>Inventory system</li><li>Save system</li><li>UI</li><li>Consumables</li>",
-        screens: ["./IMGS/tarocchi.jpg", "./IMGS/pushy.png", "./IMGS/deadc.png", "./IMGS/kidds.png"]
+        long: "<b>Demon in me</b> is a school project made in Unreal Engine 5 through the use of blueprints. <br> In this project we approached the potentiality of the engine and created an open-map with the loading/unloading of the levels with the level streaming system. The protagonist can make use of different weapons which interacts with the enemies in several ways (i.e. wind knockback, fire burn, enemies becoming friends). ",
+        did: "<li>Level loading/unloading system</li><li>Enemies AI</li><li>Inventory system</li><li>Save system</li><li>UI</li><li>Consumables</li><li>Power ups</li><li>Environmental scripts</li><li>Dialogue system</li>",
+        screens: ["tarocchi.jpg", "dim1.png", "dim3.png","dim4.png","dim5.png"],
+        video: "V2IqAoej2CM"
     },
     {
-        img: "./IMGS/pushy.png",
+        img: "pushy.png",
         link: "https://smanio.itch.io/pushy-cat",
         skills: ["Unity", "C#"],
         title: "Pushy Cat",
         date: "nov 2023",
         txt: "Mobile school project where I implemented the main core of the game mechanics.<br>(Also made the soundtrack :-P)",
-        long: "",
-        did: "",
-        screens: [""]
+        long: "<b>Pushy cat</b> is a mobile game developed in Unity. The game is a <i>push sushi</i> remake with a gameplay twist: the player can change its direction during the level through the use of specific tunnels.<br>This is a school project where we faced one of the biggest critical issue of a mobile game development: the heterogeneous size of mobile devices. Moreover, it is also necessary to take into serious account game optimization.",
+        did: "<li>Character movement</li><li>Level loading/unloading system</li><li>Environmental scripts</li><li>UI</li><li>Reward system</li><li style='font-size: 15px'>Soundtrack</li>",
+        screens: []
     },
     {
-        img: "./IMGS/deadc.png",
+        img: "deadc.png",
         link: "https://smanio.itch.io/dead-cat-bounce",
         skills: ["Unity", "C#"],
         title: "Dead Cat Bounce",
         date: "jun 2023",
         txt: "Implemented several rooms and power-ups of this soft rogue-like project.",
-        long: "",
-        did: "",
-        screens: [""]
+        long: "<b>Dead cat bounce</b> is a rogue-like 2.5D game made in Unity. This is a two-week school project made at the end of my first year. Challenges in this project where almost all dictated by the progression of the game and the necessity to bring all the power-ups accumulated during the single run.",
+        did: "<li>5/6 loadable maps</li><li>All power ups</li><li>UI</li>",
+        screens: ["dcb1.png", "dcb2.png", "dcb3.png", "dcb4.png", "dcb5.png"],
+        video: "jY2HRORcemc"
     },
     {
-        img: "./IMGS/kidds.png",
+        img: "kidds.png",
         link: "https://smanio.itch.io/kidds-treasure",
         skills: ["Unity", "C#"],
         title: "Kidd's Treasure",
         date: "may 2023",
         txt: "Worked to create the core mechanics of this delivery narrative game.",
-        long: "",
-        did: "",
-        screens: [""]
+        long: "<b>Kidd's treasure</b> is a Unity narrative pirate game developed during the latest period of my first year of education. <br>Challenges I found while working on this project are: creating a modular and scalable quest system; creating an organic transition between the main scene and the minigame scenes.",
+        did: "<li>Boat movement</li><li>Level loading/unloading system (main scene/mini-games)</li><li>Environmental scripts</li><li>UI</li><li>Reward system</li><li>Dialogue system</li><li>Final minigame</li>",
+        screens: ["kidds1.png", "kidds2.png", "kidds3.png"],
+        video: "ozZp52Zbmv4"
     },
     {
-        img: "./IMGS/dontclick.png",
+        img: "dontclick.png",
         link: "https://smanio.itch.io/dont-click-me-or-else",
         skills: ["Unity", "C#"],
         title: "Don't Click Me Or Else...",
         date: "apr 2023",
         txt: "One week jam-like project. Solo-programmer experience.",
-        long: "",
-        did: "",
-        screens: [""]
+        long: `<b>Don't click me or else...</b> is a Unity made jam-like project. It revolves around the idea of being annoyed and stressed. <br> This is a solo-programmer jam project made in 3/4 days; the system is very scalable as to introduce new "mission" or "spam" mails is a matter of clicks. The save system is very primitive as it uses the <i>PlayerPrefs</i> storage.`,
+        did: "<li>Mail system</li><li>Environmental scripts</li><li>UI</li>",
+        screens: ["dcm1.png", "dcm2.png", "dcm3.png",],
+        video: "ydpCpt7Ntug"
     },
-    {
-        img: "./IMGS/tcrossing.png",
-        link: "https://smanio.itch.io/tomato-crossing",
-        skills: ["Unity", "C#"],
-        title: "Tomato Crossing",
-        date: "feb 2023",
-        txt: "Worked to create the procedural experience and gameplay of a crossy road-like game.",
-        long: "",
-        did: "",
-        screens: [""]
-    }
 ]
 let isOpening = false;
 let bodyContainer = document.getElementById("body-container");
@@ -74,6 +81,9 @@ let bg = document.getElementById("bg");
 
 let container = document.getElementById("timeline-PROJECTS");
 let focusContainer = document.getElementById("focusContainer");
+let innerFocusContainer = focusContainer.getElementsByClassName("innerFocus");
+
+let urlToLoad;
 
 for(let i = 0; i < timelineSteps.length; i++){
 
@@ -90,6 +100,8 @@ for(let i = 0; i < timelineSteps.length; i++){
 
         setTimeout(function(){
             isOpening = false;
+
+            innerFocusContainer[0].scroll({top:0});
 
             focusContainer.style.opacity = 1;
 
@@ -115,7 +127,7 @@ for(let i = 0; i < timelineSteps.length; i++){
     let dots = elem.getElementsByClassName("dot");
 
     if(dots.length > 0){
-        dots[0].src = timelineSteps[i].img;
+        dots[0].src = "./IMGS/" + timelineSteps[i].img;
     }
 
     let titles = elem.getElementsByClassName("title");
@@ -162,6 +174,10 @@ function closeFocus(){
     bg.style.background = "#00000000";
 
     focusContainer.style.opacity = 0;
+
+    if(isBig) changeSize();
+
+    stopVideo();
     
     setTimeout(function(){
             focusContainer.classList.replace("shown", "hidden");
@@ -212,24 +228,68 @@ function fillFocus(i){
                 obj.screens.forEach((e) => {
                     
                     let img = document.createElement("img");
-                    img.src = e;
+                    img.src = "./IMGS/" + e;
                     img.style.width = "100%";
                     img.style.aspectRatio = "inherit";
-                    // img.style.scale = "1.2";
                     elem.appendChild(img);
                 })
 
                 currentIndex = 0;
                 slides = Array.from(elem.children);
                 break;
-            case "link":
+            case "game-link":
                 elem.onclick = function()
                 {
                     window.open(obj.link);
                 }
                 break;
+            case "git-link":
+                if(obj.git)
+                {
+                    elem.style.display = "block";
+                    elem.onclick = function()
+                    {
+                        window.open(obj.git);
+                    }
+                }
+                else
+                {
+                    elem.style.display = "none";
+                }
+                break;
+            case "doc-link":
+                if(obj.doc)
+                {
+                    elem.style.display = "block";
+                    let a = elem.getElementsByTagName("a");
+                    a[0].href = obj.doc;
+                }
+                else
+                {
+                    elem.style.display = "none";
+                }
+            break;
+            case "playerContainer":
+                if(!!obj.video)
+                {
+                    elem.style.display = 'block';
+                    if(isLoaded)
+                    {
+                        playVideo(obj.video);
+                    }
+                    else
+                    {
+                        urlToLoad = obj.video;
+                    }
+                }
+                else
+                {
+                    elem.style.display = 'none';
+                }
         }
     }
+
+
     
 }
 
@@ -291,6 +351,27 @@ function changeSlide(dir){
 
 }
 
+let isBig = false;
+let parent;
+
+function changeSize(elem)
+{
+    isBig = !isBig;
+
+    if(!parent) parent = elem.parentNode;
+
+    if(isBig)
+    {
+        parent.classList.add("big");
+    }
+    else
+    {
+        parent.classList.remove("big");
+    }
+
+    
+}
+
 let educationSteps = [{
         img: "./IMGS/eh.png",
         link: "https://www.eventhorizonschool.com/",
@@ -308,7 +389,7 @@ let educationSteps = [{
         skills: [],
         title: "Ca' Foscari University",
         date: "2014 - 2021",
-        txt: "Years of education at Ca' Foscari University: started with the highly beloved japanese culture focused bachelor degree ended with graduation. Moved on with a data-science bachelor degree.<br> <a class='link' href='./IMGS/eh.png' target='_blank' download>IT Thesis</>",
+        txt: "Years of education at Ca' Foscari University: started with the highly beloved japanese culture focused bachelor degree ended with graduation. Moved on with a data-science bachelor degree.<br> <a class='link hoverenlight' href='./IMGS/eh.png' target='_blank' download>IT Thesis</>",
         long: "",
         did: "",
         screens: [""]
@@ -359,4 +440,51 @@ for(let i = 0; i < educationSteps.length; i++){
     }
 
     educationContainer.appendChild(elem);
+}
+
+
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+function onYouTubeIframeAPIReady() {
+player = new YT.Player('player', {
+    playerVars: {
+    'playsinline': 0,
+    'autoplay': 0,
+    },
+    events: 
+    {
+    'onReady': onPlayerReady,
+    }
+});
+}
+
+let isLoaded = false;
+
+function onPlayerReady(event) {
+    isLoaded = true;
+
+    if(!!urlToLoad)
+    {
+        playVideo(urlToLoad);
+    }
+}
+
+function playVideo(url)
+{
+    player.loadVideoById(url);
+    player.mute();
+    stopVideo();
+}
+
+
+function stopVideo() {
+    player.stopVideo();
 }

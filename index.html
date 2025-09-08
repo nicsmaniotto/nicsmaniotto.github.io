@@ -125,15 +125,24 @@
             </div>
         </div>
     </div>
-    <div class="focus hidden" id="focusContainer" onfocusout="closeFocus()">
-        <img class="close" src="./IMGS/x.png" onclick="closeFocus()"/>
+    <div class="focus hidden" id="focusContainer">
+        <img class="close hoverenlight" src="./IMGS/x.png" onclick="closeFocus()"/>
         <div class="innerFocus">
-            <div id="focusTitle" class="title"></div>
+            <div class="focusTop">
+                <div class="titleContainer">
+                    <div id="focusTitle" class="title"></div>
+                    <div class="linksContainer">
+                        <div id="game-link" class="hoverenlight" style="height: 40px; width: 40px;"><img style="width: 100%;" src="./IMGS/link.png" alt=""></div>
+                        <div id="git-link" class="hoverenlight" style="height: 30px; width: 30px;"><img style="width: 100%;" src="./IMGS/github.png" alt=""></div>
+                        <div id="doc-link" class="hoverenlight" style="height: 33px; width: 33px;"><a target="#blank" download><img style="width: 100%;" src="./IMGS/document.png" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="skills" id="skills" style="width: unset; justify-content: right; padding: 0; flex-wrap: nowrap;"></div>
+            </div>
             <div class="description" id="date" style="font-style: italic;"></div>
             <div class="sections">
                 <div class="section left">
-                    <div style="display: flex; flex-direction: column; row-gap: 5px;">
-                    </div>
+                    <div></div>
                     <div class="focusParagraph">
                         <div class="subtitle">ABOUT</div>
                         <div class="description" id="about"></div>
@@ -143,15 +152,22 @@
                 </div>
                 <div class="section right">
                     <div class="screens">
+                        <div id="playerContainer" style="width: 100%; height: 100%;">
+                            <div style="width: 100%; height: 100%;" id="player"></div>
+                        </div>
+                        <!-- <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/dWqp6VokXVM?si=OjgqVvlXBstu6kdV&mute=1" title="YouTube video player" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen onfocusout=""></iframe> -->
+                    </div>
+                    <div class="screens">
                         <div class="arrows">
                             <div class="arrow" onclick="changeSlide(-1)"><img class="arrow-img" src="./IMGS/arrow.png" alt=""></div>
                             <div class="arrow reversed" onclick="changeSlide(1)"><img class="arrow-img" src="./IMGS/arrow.png" alt=""></div>
                         </div>
+                        <div class="sizeIcon" onclick="changeSize(this)">
+                            <img src="./IMGS/expand.png" alt="" style="width: 100%; height: 100%;">
+                        </div>
                         <div id="imgs"></div>
-                    </div>
-                    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
-                        <div class="skills" id="skills" style="justify-content: left; align-self: flex-start; padding-left: 0;"></div>
-                        <div id="link" class="hoverenlight"><img src="./IMGS/link.png" alt="" ></div>
                     </div>
                 </div>
             </div>
