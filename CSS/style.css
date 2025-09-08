@@ -99,6 +99,8 @@ body{
     justify-content: center;
     height: 100%;
     gap: 10px;
+    text-decoration: none;
+    color: #e0e1dd ;
 }
 
 .name{

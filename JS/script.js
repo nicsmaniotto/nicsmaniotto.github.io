@@ -16,6 +16,18 @@ const timelineSteps = [
         video: "okrj4g1hwqY"
     },
     {
+        img: "pq.png",
+        link: "https://eventhorizonschool.itch.io/pizza-quest-tales-of-an-absolutely-normal-pizzeria",
+        skills: ["UE5", "C++", "Blueprints"],
+        title: "Pizza Quest",
+        date: "may 2025",
+        txt: "Delivery game with a soft narrative and combat gameplay where I focused on gameplay programming.",
+        long: "<b>Pizza Quest</b> is a delivery game with a soft narrative and combat gameplay. The player plays as a pizza delivery girl who works at night when funny demons plague the city.<br> In this project, I focused on gameplay programming, developing everything that is not linked to UI. Main challenges were creating a satisfying movement feed with the help of an input buffer; creating a scalable system of combat behaviors and power up addition.",
+        did: "<li>Player movement (<i>i.e.</i> dash, custom jump, custom acceleration)</li><li>Input buffer</li><li>Combat system</li><li>Power ups (<i>i.e.</i> Wall jump, double jump, grappling hook)</li><li>Level loading/unloading</li><li>Enemy IA</li><li>Enemy spawn behavior</li><li>Minimap</li>",
+        screens: ["pq6.png", "pq2.png", "pq3.png", "pq4.png", "pq1.png", "pq5.png", "pq7.png"],
+        video: "dl9RPDRIjiY"
+    },
+    {
         img: "tarocchi.jpg",
         link: "https://smanio.itch.io/demon-in-me",
         skills: ["UE5", "Blueprints"],
@@ -377,7 +389,7 @@ let educationSteps = [{
         link: "https://www.eventhorizonschool.com/",
         skills: [],
         title: "Event Horizon School",
-        date: "oct 2021 - present",
+        date: "oct 2022 - oct 2025",
         txt: "Years of education of Game Programming at Event Horizon School in Padua.",
         long: "",
         did: "",
