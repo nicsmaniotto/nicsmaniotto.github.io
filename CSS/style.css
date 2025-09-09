@@ -34,12 +34,17 @@
             height: 100px;
             align-content: center;
             text-align: center;
-            width: 800px;
+            width: 50%;
+        }
+
+        .positioned.divider{
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #ccc, transparent);
         }
 
         .positioned.name{
             font-size: 50px;
-            border-bottom: 2px solid white;
             letter-spacing: 15px;
         }
 
@@ -100,6 +105,7 @@ body{
     gap: 10px;
     text-decoration: none;
     color: #e0e1dd ;
+    scale: 1 !important;
 }
 
 .subname{
@@ -157,6 +163,22 @@ body{
     height: 250px;
     border-radius: 50%;
     border: solid 5px #e0e1dd;
+    display: flex;
+    padding: 15px;
+
+    .fotoContainer
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 50%;
+        align-self: center;
+        justify-self: center;
+        background: white;
+    }
 }
 
 .about-container{
@@ -306,6 +328,8 @@ body{
             background: linear-gradient(90deg,rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
             display: flex;
             align-items: center;
+            cursor: pointer;
+            padding: 10px;
 
             .arrow-img{
                 width: 40px;
@@ -316,7 +340,6 @@ body{
 
         .arrow:hover{
             background: linear-gradient(90deg,rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
-            cursor: pointer;
 
             .arrow-img{
                 opacity: .5;
@@ -411,7 +434,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    max-width: 70%;
+    max-width: 65%;
     text-align: center;
 }
 
@@ -559,7 +582,7 @@ body{
     height: 50px;
     top: calc(50% - 25px);
     left: calc(50% - 25px);
-    transition: .2s;
+    transition: .1s;
     opacity: .4;
 }
 
@@ -573,13 +596,9 @@ body{
     display: none;  /* Older Safari and Chromium */
 }
 
-.hoverenlight{
-    transition: .2s;
-}
-
 .hoverenlight:hover{
-    filter: opacity(0.5) drop-shadow(0 0 0 #ffcf7c) drop-shadow(0 0 0 #ffcf7c) saturate(150%);
-    scale: 1.1;
+    filter: opacity(0.5) drop-shadow(0 0 0 #ffffff) drop-shadow(0 0 0 #ffffff) saturate(150%);
+    scale: 1.05;
     cursor: pointer;
 }
 

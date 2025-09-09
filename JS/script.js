@@ -48,7 +48,8 @@ const timelineSteps = [
         txt: "Mobile school project where I implemented the main core of the game mechanics.<br>(Also made the soundtrack :-P)",
         long: "<b>Pushy cat</b> is a mobile game developed in Unity. The game is a <i>push sushi</i> remake with a gameplay twist: the player can change its direction during the level through the use of specific tunnels.<br>This is a school project where we faced one of the biggest critical issue of a mobile game development: the heterogeneous size of mobile devices. Moreover, it is also necessary to take into serious account game optimization.",
         did: "<li>Character movement</li><li>Level loading/unloading system</li><li>Environmental scripts</li><li>UI</li><li>Reward system</li><li style='font-size: 15px'>Soundtrack</li>",
-        screens: []
+        screens: ["pc1.jpg", "pc2.jpg", "pc3.jpg", "pc4.jpg"],
+        video: "MIJCtw6Gpeg"
     },
     {
         img: "deadc.png",
@@ -401,7 +402,7 @@ let educationSteps = [{
         skills: [],
         title: "Ca' Foscari University",
         date: "2014 - 2021",
-        txt: "Years of education at Ca' Foscari University: started with the highly beloved japanese culture focused bachelor degree ended with graduation. Moved on with a data-science bachelor degree.<br> <a class='link hoverenlight' href='./IMGS/eh.png' target='_blank' download>IT Thesis</>",
+        txt: "Years of education at Ca' Foscari University: started with the highly beloved japanese culture focused bachelor degree ended with graduation.<br>Moved on with a data-science bachelor degree.",
         long: "",
         did: "",
         screens: [""]
