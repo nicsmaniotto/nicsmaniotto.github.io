@@ -182,6 +182,7 @@ let expContainers = container.getElementsByClassName("explanation-container");
 
 function closeFocus(){
     document.body.style.overflow = "visible";
+    document.body.style.overflowX = "hidden";
     bodyContainer.style.filter = "blur(0px)"
     bg.style.zIndex = -1;
     bg.style.background = "#00000000";
