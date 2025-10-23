@@ -2,6 +2,18 @@ const explanationTemplate = '<a class="dot-container"><img class="dot"/></a><div
 
 const timelineSteps = [
     {
+        img: "N1.png",
+        link: "https://alex-artuso.itch.io/nishik",
+        skills: ["UE5", "Blueprints"],
+        title: "NISHK",
+        date: "oct 2025",
+        txt: "Turn based dice game with an horror twist.",
+        long: "In Nîshk, your score is everything: roll the dice and use your fingers to boost it to beat your opponents' score. Developed in 5 days, this is a <i>Scream Jam 2025</> submission. I developed the whole game and made up the concept. It was a great opportunity to overcome the lack of time with a strong motivation!",
+        did: "<li>Turn based system</li><li>Enemy IA</li><li>UI</li><li>Items effects</li><li>Camera management</li>",
+        screens: ["N1.png", "N2.png", "N3.png", "N4.png", "N5.png"],
+        video: "vICGl0UbPmE"
+    },
+    {
         img: "ET2.png",
         link: "https://smanio.itch.io/end-times",
         git: "https://github.com/nicsmaniotto/SpecializationP",
