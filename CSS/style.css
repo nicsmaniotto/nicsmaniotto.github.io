@@ -161,7 +161,7 @@ body{
 
 .foto{
     width: 250px;
-    height: 250px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     border: solid 5px #e0e1dd;
     display: flex;
@@ -446,13 +446,22 @@ body{
     align-items: center;
     width: 100px;
     min-width: 100px;
-    height: 100px;
+    aspect-ratio: 1 / 1;
     left: -70px;
     border-radius: 50%;
     border: 5px solid rgb(223, 224, 220);
     padding: 10px;
     background: #1b263b;
     transition: .15s;
+
+    .dot-sizer{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .focus{
@@ -629,10 +638,7 @@ body{
 
 
 .dot{
-    width: 100%;
     height: 100%;
-    border-radius: 50%;
-    background-color: transparent;
 }
 
 .title-container{

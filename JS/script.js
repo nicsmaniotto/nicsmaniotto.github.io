@@ -1,4 +1,4 @@
-const explanationTemplate = '<a class="dot-container"><img class="dot"/></a><div class="explanation"><div class="title-container"><div class="title"></div><div class="subtitle"></div></div><div class="description"></div></div><div class="skills reduced"></div>';
+const explanationTemplate = '<a class="dot-container"><div class="dot-sizer"><img class="dot"/></div></a><div class="explanation"><div class="title-container"><div class="title"></div><div class="subtitle"></div></div><div class="description"></div></div><div class="skills reduced"></div>';
 
 const timelineSteps = [
     {
