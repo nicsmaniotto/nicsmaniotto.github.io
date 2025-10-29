@@ -193,12 +193,31 @@ body{
     justify-content: center;
 }
 
+.jam{
+    position: absolute;
+    transform: rotate(-90deg);
+    width: 140PX;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #795e00;
+    border-radius: 12px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #e0e1dd;
+}
+
 @media only screen and (max-width: 1450px) {
   .about {
     width: 100%;
     padding-right: 0px;
     display: flex;
     flex-direction: column;
+  }
+
+  .jam{
+    left: -85px;
   }
 
   .subheader{
@@ -240,6 +259,10 @@ body{
 }
 
 @media only screen and (min-width: 1450px) {
+
+    .jam{
+        left: -50px;
+    }
 
     .subheader{
         width: 70%;
@@ -550,10 +573,6 @@ body{
             display: flex;
             flex-direction: column;
             row-gap: 35px;
-        }
-    
-        .left{
-            
         }
     
         .right{

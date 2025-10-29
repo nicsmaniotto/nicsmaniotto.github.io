@@ -4,6 +4,7 @@ const timelineSteps = [
     {
         img: "N1.png",
         link: "https://alex-artuso.itch.io/nishik",
+        jam: "https://itch.io/jam/scream-jam-2025",
         skills: ["UE5", "Blueprints"],
         title: "NISHK",
         date: "oct 2025",
@@ -185,6 +186,23 @@ for(let i = 0; i < timelineSteps.length; i++){
 
             skillsContainers[0].appendChild(skill);
         })
+    }
+
+    if(timelineSteps[i].jam)
+    {
+        let jamLink = document.createElement("a");
+        jamLink.className = "jam";
+        // jamLink.href = timelineSteps[i].jam;
+        // jamLink.target = "#blank";
+        jamLink.innerText = "GAME JAM";
+
+        jamLink.onclick = function(e)
+            {
+                window.open(timelineSteps[i].jam);
+                e.stopImmediatePropagation();
+            }
+
+        elem.appendChild(jamLink);
     }
 
     container.appendChild(elem);
