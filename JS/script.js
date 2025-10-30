@@ -313,6 +313,18 @@ function fillFocus(i){
                     elem.style.display = "none";
                 }
             break;
+            case "jam-link":
+                if(obj.jam)
+                {
+                    elem.style.display = "block";
+                    let a = elem.getElementsByTagName("a");
+                    a[0].href = obj.jam;
+                }
+                else
+                {
+                    elem.style.display = "none";
+                }
+            break;
             case "playerContainer":
                 if(!!obj.video)
                 {
