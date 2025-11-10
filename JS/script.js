@@ -2,6 +2,19 @@ const explanationTemplate = '<a class="dot-container"><div class="dot-sizer"><im
 
 const timelineSteps = [
     {
+        img: "L6.png",
+        link: "https://lucaburocchi.itch.io/parasitejam",
+        jam: "https://itch.io/jam/pizza-doggys-horror-jam-3",
+        skills: ["Unity", "C#"],
+        title: "Lambton",
+        date: "nov 2025",
+        txt: "Claustrophobic spooky puzzle game.",
+        long: "You are in your filthy bathroom and you feel stranger than usual. Will you be able to understand what is wrong with you... or will you allow it to consume you? Developed in 9 days, this is a <i>Pizza Doggy's 2025 Horror Jam</i> submission. I worked as solo programmer, making up a scalable interaction system.",
+        did: "<li>Interaction system</li><li>Loop cycle</li><li>UI</li><li>Input switch</li>",
+        screens: ["L6.png", "L1.png", "L2.png", "L3.png", "L4.png", "L5.png"],
+        video: "uX08pkcjBhY"
+    },
+    {
         img: "N1.png",
         link: "https://alex-artuso.itch.io/nishik",
         jam: "https://itch.io/jam/scream-jam-2025",

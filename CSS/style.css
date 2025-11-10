@@ -641,10 +641,10 @@ body{
     
     .dot-container{
         border: 5px solid #ffcf7c;
-        width: 120px !important;
-        min-width: 120px;
-        height: 120px;
-        left: -78px;
+        width: 110px !important;
+        height: 110px;
+        min-width: 110px;
+        left: -75px;
     }
 
     .title{
